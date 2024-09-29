@@ -130,8 +130,8 @@ mobileMenu.addEventListener("mouseover",function(e){
     }
 });
 
-mobileMenu.addEventListener("mouseout",function(e){
-    if(e.target.classList.contains("left-nav")){
+mobileMenu.addEventListener("click",function(e){
+    if(e.target.classList.contains("nav-link")){
         label.forEach((element) => element.classList.add("hidden-label"));
         menuArrows.forEach((arrow) => arrow.classList.remove("rotate"));
     }
