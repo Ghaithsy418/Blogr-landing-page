@@ -500,7 +500,7 @@ img{
 
 .mobile-menu .left-nav, .mobile-menu .right-nav{
   flex-direction: column;
-  width: 70%;
+  width: 60%;
 }
 
 .mobile-menu .right-nav{
