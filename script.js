@@ -97,11 +97,20 @@ hamburger.addEventListener("click",function(){
     closeBtn.classList.add("close-btn-active");
 });
 
-closeBtn.addEventListener("click",function(){
+const close = function(){
     mobileMenu.classList.remove("mobile-menu-active");
     overlay.classList.remove("overlay-active");
     hamburger.style.display = "block";
     closeBtn.classList.remove("close-btn-active");
+}
+
+
+closeBtn.addEventListener("click",close);
+overlay.addEventListener("click",close);
+document.addEventListener("keydown",function(e){
+    if(e.key === "Escape"){
+        close();
+    }
 })
 
 mobileMenu.addEventListener("mouseover",function(e){
@@ -127,3 +136,4 @@ mobileMenu.addEventListener("mouseout",function(e){
         menuArrows.forEach((arrow) => arrow.classList.remove("rotate"));
     }
 })
+
