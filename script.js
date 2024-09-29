@@ -113,6 +113,23 @@ document.addEventListener("keydown",function(e){
     }
 })
 
+mobileMenu.addEventListener("click",function(e){
+    if(e.target.classList.contains("product-link")) {
+        productLabelMenu.classList.remove("hidden-label");
+        e.target.firstElementChild.classList.add("rotate");
+    }  
+
+    if(e.target.classList.contains("company-link")) {
+        companyLabelMenu.classList.remove("hidden-label");
+        e.target.firstElementChild.classList.add("rotate");
+    } 
+    
+    if(e.target.classList.contains("connect-link")) {
+        connectLabelMenu.classList.remove("hidden-label");
+        e.target.firstElementChild.classList.add("rotate");
+    }
+});
+
 mobileMenu.addEventListener("mouseover",function(e){
     if(e.target.classList.contains("product-link")) {
         productLabelMenu.classList.remove("hidden-label");
