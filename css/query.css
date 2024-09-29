@@ -101,6 +101,10 @@
         width: 15rem;
         height: 6rem;
     }
+    
+    .mobile-menu .label{
+        width: 16rem;
+    }
 }
 
 @media(max-width: 31.8rem){
@@ -129,8 +133,8 @@
     }
 
     .mobile-menu .label{
-        width: 16rem;
-    }
+        width: 24rem;
+    
 
     .section-3{
         height: 70vh;
